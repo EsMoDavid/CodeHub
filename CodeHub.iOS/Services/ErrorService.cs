@@ -48,7 +48,7 @@ namespace CodeHub.iOS.Services
                     SendError(ex, false);
             };
 
-            Task.Run(SendPersistedError);
+            //Task.Run(new Action(SendPersistedError));
         }
 
         public void Log(Exception e, bool fatal = false)
